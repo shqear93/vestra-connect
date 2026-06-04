@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0}
+  body{background:var(--bg-canvas);font-family:var(--font-sans);padding:24px 28px}
+  .card{background:var(--bg-surface);border:1px solid var(--border-default);border-radius:var(--radius-xl);box-shadow:var(--shadow-md);padding:22px;display:flex;gap:18px}
+  .thumb{width:96px;height:96px;border-radius:var(--radius-lg);background:linear-gradient(135deg,var(--ink-700),var(--ink-800));flex:none;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--font-display);font-size:30px;font-weight:600}
+  .body{flex:1;min-width:0}
+  .top{display:flex;align-items:center;gap:8px;margin-bottom:4px}
+  .cat{font-family:var(--font-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+  .verified{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;color:var(--emerald-800);background:var(--emerald-50);border:1px solid var(--emerald-200);border-radius:999px;padding:2px 8px 2px 6px}
+  .verified svg{width:12px;height:12px;stroke-width:2.4}
+  h3{font-family:var(--font-display);font-size:21px;font-weight:600;color:var(--fg-strong);margin:2px 0 6px;letter-spacing:-.01em}
+  p{font-size:14px;line-height:1.55;color:var(--fg-muted);margin:0 0 14px}
+  .meta{display:flex;gap:22px;align-items:flex-end}
+  .stat .n{font-family:var(--font-mono);font-weight:600;font-size:18px;color:var(--fg-strong)}
+  .stat .l{font-size:11px;color:var(--fg-subtle)}
+  .readiness{margin-left:auto;text-align:right}
+  .track{width:120px;height:6px;background:var(--bg-inset);border-radius:999px;overflow:hidden;margin-top:5px}
+  .fill{height:100%;width:82%;background:var(--accent);border-radius:999px}
+</style></head>
+<body>
+  <div class="card">
+    <div class="thumb">S</div>
+    <div class="body">
+      <div class="top"><span class="cat">University · Renewable energy</span>
+        <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10V5z"/><path d="m9 12 2 2 4-4"/></svg>Verified</span>
+      </div>
+      <h3>Solar microgrid for rural clinics</h3>
+      <p>A student-led pilot bringing reliable solar power to three clinics in Irbid, with faculty backing and a working prototype.</p>
+      <div class="meta">
+        <div class="stat"><div class="n">JOD&nbsp;45K</div><div class="l">Ask</div></div>
+        <div class="stat"><div class="n">3</div><div class="l">Signals</div></div>
+        <div class="readiness"><span class="cat" style="color:var(--fg-subtle)">Readiness 82</span><div class="track"><div class="fill"></div></div></div>
+      </div>
+    </div>
+  </div>
+</body></html>

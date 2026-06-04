@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0}
+  body{background:var(--bg-canvas);font-family:var(--font-sans);padding:28px 30px;display:flex;flex-direction:column;gap:18px}
+  .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  .lbl{font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--fg-subtle);width:88px;flex:none}
+  .badge{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;border-radius:999px;padding:5px 12px 5px 9px}
+  .badge svg{width:15px;height:15px;stroke-width:2.2}
+  .verified{background:var(--verified-bg);color:var(--emerald-800);border:1px solid var(--emerald-200)}
+  .premium{background:var(--gold-50);color:var(--gold-700);border:1px solid var(--gold-200)}
+  .premium svg{fill:var(--gold-500);stroke:var(--gold-700)}
+  .status{display:inline-flex;align-items:center;gap:7px;font-family:var(--font-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:5px 11px;border:1px solid var(--border-default);background:var(--bg-surface);color:var(--ink-700)}
+  .dot{width:7px;height:7px;border-radius:999px}
+</style></head>
+<body>
+  <div class="row"><span class="lbl">Verification</span>
+    <span class="badge verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10V5z"/><path d="m9 12 2 2 4-4"/></svg>Verified project</span>
+    <span class="badge verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10V5z"/><path d="m9 12 2 2 4-4"/></svg>Identity verified</span>
+  </div>
+  <div class="row"><span class="lbl">Premium</span>
+    <span class="badge premium"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 2.4 7.4H22l-6 4.6 2.3 7.4L12 17l-6.3 4.4L8 14 2 9.4h7.6z"/></svg>Accredited investor</span>
+    <span class="badge premium"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 2.4 7.4H22l-6 4.6 2.3 7.4L12 17l-6.3 4.4L8 14 2 9.4h7.6z"/></svg>Premium</span>
+  </div>
+  <div class="row"><span class="lbl">Status</span>
+    <span class="status"><span class="dot" style="background:var(--emerald-500)"></span>Open to intros</span>
+    <span class="status"><span class="dot" style="background:var(--gold-500)"></span>In review</span>
+    <span class="status"><span class="dot" style="background:var(--ink-300)"></span>Closed</span>
+  </div>
+</body></html>

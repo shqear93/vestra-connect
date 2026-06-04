@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0}
+  body{background:var(--bg-canvas);font-family:var(--font-sans);padding:28px 30px;display:flex;flex-direction:column;gap:16px}
+  .row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+  .btn{font-family:var(--font-sans);font-size:15px;font-weight:600;border-radius:var(--radius-md);padding:11px 20px;border:1px solid transparent;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:all var(--dur-base) var(--ease-out)}
+  .btn svg{width:17px;height:17px;stroke-width:2}
+  .primary{background:var(--accent);color:#fff;box-shadow:var(--shadow-xs)}
+  .primary:hover{background:var(--accent-hover);box-shadow:var(--shadow-emerald)}
+  .secondary{background:var(--bg-surface);color:var(--fg-strong);border-color:var(--border-strong);box-shadow:var(--shadow-xs)}
+  .secondary:hover{border-color:var(--ink-400);background:var(--bg-surface-warm)}
+  .ghost{background:transparent;color:var(--ink-700)}
+  .ghost:hover{background:var(--bg-subtle)}
+  .gold{background:var(--ink-800);color:#fff}
+  .gold:hover{background:var(--ink-900)}
+  .gold svg{stroke:var(--gold-400)}
+  .sm{font-size:13px;padding:7px 14px}
+  .lbl{font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--fg-subtle);width:70px;flex:none}
+</style></head>
+<body>
+  <div class="row"><span class="lbl">Primary</span>
+    <button class="btn primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Showcase your project</button>
+    <button class="btn primary">Explore projects</button>
+  </div>
+  <div class="row"><span class="lbl">Secondary</span>
+    <button class="btn secondary">Request introduction</button>
+    <button class="btn ghost">Learn more</button>
+  </div>
+  <div class="row"><span class="lbl">Premium</span>
+    <button class="btn gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 2.4 7.4H22l-6 4.6 2.3 7.4L12 17l-6.3 4.4L8 14 2 9.4h7.6z"/></svg>Investor access</button>
+    <button class="btn primary sm">Small</button>
+    <button class="btn secondary sm">Small</button>
+  </div>
+</body></html>

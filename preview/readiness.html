@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0}
+  body{background:var(--bg-canvas);font-family:var(--font-sans);padding:24px 28px}
+  .card{background:var(--bg-surface);border:1px solid var(--border-default);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);padding:20px 22px}
+  .hd{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:16px}
+  .ttl{font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+  .score{font-family:var(--font-mono);font-weight:600;font-size:30px;color:var(--fg-strong)}
+  .score small{font-size:14px;color:var(--fg-subtle);font-weight:400}
+  .dim{margin-bottom:13px}
+  .dim:last-child{margin-bottom:0}
+  .dl{display:flex;justify-content:space-between;font-size:13px;margin-bottom:6px}
+  .dl b{color:var(--fg-strong);font-weight:600}
+  .dl span{font-family:var(--font-mono);color:var(--fg-muted)}
+  .track{height:7px;background:var(--bg-inset);border-radius:999px;overflow:hidden}
+  .fill{height:100%;border-radius:999px;background:var(--accent)}
+  .fill.gold{background:var(--gold-500)}
+</style></head>
+<body>
+  <div class="card">
+    <div class="hd"><span class="ttl">Readiness signal</span><span class="score">82<small>&nbsp;/ 100</small></span></div>
+    <div class="dim"><div class="dl"><b>Team &amp; founders</b><span>90</span></div><div class="track"><div class="fill" style="width:90%"></div></div></div>
+    <div class="dim"><div class="dl"><b>Traction &amp; proof</b><span>78</span></div><div class="track"><div class="fill" style="width:78%"></div></div></div>
+    <div class="dim"><div class="dl"><b>Verification</b><span>95</span></div><div class="track"><div class="fill" style="width:95%"></div></div></div>
+    <div class="dim"><div class="dl"><b>Financial clarity</b><span>64</span></div><div class="track"><div class="fill gold" style="width:64%"></div></div></div>
+  </div>
+</body></html>

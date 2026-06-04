@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0}
+  body{background:var(--bg-canvas);font-family:var(--font-sans);padding:26px 30px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .item{background:var(--bg-surface);border:1px solid var(--border-default);border-radius:14px;padding:14px;box-shadow:var(--shadow-sm)}
+  .dot{width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+  .dot svg{width:18px;height:18px;stroke-width:2}
+  .nm{font-size:14px;font-weight:600;color:var(--fg-strong);margin-bottom:2px}
+  .role{font-size:12px;color:var(--fg-muted)}
+  .chip{display:inline-block;margin-top:10px;font-family:var(--font-mono);font-size:10px;padding:4px 8px;border-radius:999px}
+</style></head>
+<body>
+  <div class="item">
+    <div class="dot" style="background:var(--success-bg)"><svg viewBox="0 0 24 24" fill="none" stroke="#0E7C5A" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+    <div class="nm">Success</div><div class="role">Verified · growth</div>
+    <span class="chip" style="background:var(--success-bg);color:var(--success-fg)">#0E7C5A</span>
+  </div>
+  <div class="item">
+    <div class="dot" style="background:var(--warning-bg)"><svg viewBox="0 0 24 24" fill="none" stroke="#A8853A" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg></div>
+    <div class="nm">Warning</div><div class="role">Needs attention</div>
+    <span class="chip" style="background:var(--warning-bg);color:var(--warning-fg)">#A8853A</span>
+  </div>
+  <div class="item">
+    <div class="dot" style="background:var(--danger-bg)"><svg viewBox="0 0 24 24" fill="none" stroke="#A8482F" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6M9 9l6 6"/></svg></div>
+    <div class="nm">Danger</div><div class="role">Muted clay, never alarm-red</div>
+    <span class="chip" style="background:var(--danger-bg);color:var(--danger-fg)">#A8482F</span>
+  </div>
+  <div class="item">
+    <div class="dot" style="background:var(--info-bg)"><svg viewBox="0 0 24 24" fill="none" stroke="#244E6E" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg></div>
+    <div class="nm">Info</div><div class="role">Neutral navy</div>
+    <span class="chip" style="background:var(--info-bg);color:var(--info-fg)">#244E6E</span>
+  </div>
+</body></html>
