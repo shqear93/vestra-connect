@@ -1,0 +1,320 @@
+/* =========================================================================
+   VESTRA CONNECT — "ATLAS" PREMIUM THEME
+   Faithful fusion of two refs:
+   • Material Dashboard PRO — clean blue (#1A73E8), WHITE cards with a
+     floating gradient ICON CHIP that casts a shadow in its own color,
+     metric → divider → trend note.
+   • Shelf.nu — warm, airy, image-led; greyscale logo cloud; alternating
+     feature rows built around real product screenshots.
+   Loaded AFTER colors_and_type.css + premium.css.
+   ========================================================================= */
+:root{
+  /* ---- Material blue (primary) ---- */
+  --blue-50:#EAF2FE; --blue-100:#D2E3FC; --blue-200:#A6C8FA; --blue-300:#76A9F6;
+  --blue-400:#4A90F0; --blue-500:#1A73E8; --blue-600:#1257B5; --blue-700:#0D4490; --blue-800:#0A3470;
+  /* ---- Material accent ramps (for icon chips) ---- */
+  --info-1:#49A3F1;  --info-2:#1A73E8;
+  --success-1:#66BB6A; --success-2:#43A047;
+  --rose-1:#EC5C8B;  --rose-2:#D81B60;
+  --warn-1:#FFB547;  --warn-2:#FB8C00;
+  --dark-1:#42424A;  --dark-2:#191919;
+  /* ---- supporting solids ---- */
+  --green-500:#43A047; --green-600:#2E7D32; --green-50:#E9F6EA;
+  --rose-500:#D81B60;  --rose-50:#FCE7EF;
+  --amber-400:#FFB547; --amber-500:#FB8C00; --amber-600:#EF6C00; --amber-700:#C45500; --amber-50:#FFF4E5; --amber-200:#FFE0B2;
+  --teal-50:#E3F7F5; --teal-200:#9FE6DE; --teal-600:#0E988E;
+  /* ---- neutrals: cool-white, airy (Shelf calm + Material crispness) ---- */
+  --slate-50:#F6F8FC; --slate-100:#EEF2F8; --slate-150:#E6ECF4; --slate-200:#DCE4EE; --slate-300:#C6D1E0;
+  --ink-950:#0E1422; --ink-900:#141B2D; --ink-850:#1B2438; --ink-800:#212C44;
+
+  /* ---------------- SEMANTIC REMAP ---------------- */
+  --bg-canvas:        var(--slate-50);
+  --bg-surface:       #FFFFFF;
+  --bg-surface-warm:  #FFFFFF;
+  --bg-subtle:        var(--slate-100);
+  --bg-inset:         var(--slate-50);
+  --bg-inverse:       var(--ink-900);
+  --bg-inverse-2:     var(--ink-950);
+
+  --fg-strong:  #18223A;
+  --fg-default: #344056;
+  --fg-muted:   #5B6678;
+  --fg-subtle:  #8A93A6;
+  --fg-on-dark: #EEF3FB;
+  --fg-on-dark-muted: #A7B2C6;
+
+  --accent:        var(--blue-500);
+  --accent-hover:  var(--blue-600);
+  --accent-press:  var(--blue-700);
+  --premium:       var(--amber-500);
+
+  --border-subtle:  #EFF3F9;
+  --border-default: var(--slate-200);
+  --border-strong:  var(--slate-300);
+  --border-accent:  var(--blue-200);
+  --border-on-dark: rgba(255,255,255,0.10);
+
+  --verified: var(--blue-500);
+  --verified-bg: var(--blue-50);
+
+  --font-display: 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-2xl: 28px;
+
+  /* Shadows — soft, cool, Material-style depth */
+  --shadow-xs: 0 1px 2px rgba(20,27,45,0.05);
+  --shadow-sm: 0 1px 2px rgba(20,27,45,0.04), 0 4px 12px rgba(20,27,45,0.06);
+  --shadow-md: 0 6px 16px -8px rgba(20,27,45,0.12), 0 14px 32px -16px rgba(20,27,45,0.14);
+  --shadow-lg: 0 10px 24px -12px rgba(20,27,45,0.14), 0 30px 56px -24px rgba(20,27,45,0.18);
+  --shadow-xl: 0 18px 40px -18px rgba(20,27,45,0.20), 0 50px 90px -36px rgba(20,27,45,0.26);
+  --shadow-emerald: 0 10px 26px -8px rgba(26,115,232,0.45);
+  --shadow-gold:    0 12px 30px -10px rgba(251,140,0,0.42);
+  --shadow-focus:   0 0 0 3px rgba(26,115,232,0.22);
+
+  --grad-emerald:       linear-gradient(135deg, #4A90F0 0%, #1A73E8 100%);
+  --grad-emerald-hover: linear-gradient(135deg, #2F7DEC 0%, #1257B5 100%);
+  --grad-ink:      linear-gradient(155deg, #212C44 0%, #141B2D 70%, #0E1422 100%);
+  --grad-ink-soft: linear-gradient(155deg, #2A3656 0%, #1B2438 100%);
+  --grad-canvas:   radial-gradient(120% 90% at 80% -10%, #FFFFFF 0%, var(--slate-50) 46%, #EEF3FB 100%);
+  --grad-gold-rule:linear-gradient(90deg, transparent, var(--blue-400) 50%, transparent);
+  --glow-emerald:  radial-gradient(circle, rgba(26,115,232,0.16), transparent 62%);
+  --glow-gold:     radial-gradient(circle, rgba(251,140,0,0.16), transparent 62%);
+}
+
+/* gradient utility classes for icon chips */
+.g-info{background:linear-gradient(135deg,var(--info-1),var(--info-2))}
+.g-success{background:linear-gradient(135deg,var(--success-1),var(--success-2))}
+.g-rose{background:linear-gradient(135deg,var(--rose-1),var(--rose-2))}
+.g-warn{background:linear-gradient(135deg,var(--warn-1),var(--warn-2))}
+.g-dark{background:linear-gradient(135deg,var(--dark-1),var(--dark-2))}
+
+/* =========================================================================
+   HEADINGS — sans, tight, heavy
+   ========================================================================= */
+.hero h1,.section__head h2,.ready__copy h2,.invest__in h2,.fcta h2,.stats__head h2,
+.ccard h3,.step h3,.hcard__name,.pcard__name,.frow__copy h2{font-weight:700;letter-spacing:-.03em}
+.hero h1{letter-spacing:-.035em;line-height:1.03}
+.hero h1 .accent{
+  font-style:normal;color:transparent;
+  background:linear-gradient(108deg,var(--blue-500) 0%,#00B8D4 100%);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;white-space:nowrap;
+}
+.hero h1 .accent::after{display:none}
+
+/* faint blue dot-grid behind hero (Shelf touch) */
+.hero{isolation:isolate}
+.hero::before{
+  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background-image:radial-gradient(rgba(26,115,232,.09) 1px, transparent 1.4px);background-size:26px 26px;
+  -webkit-mask-image:radial-gradient(118% 78% at 74% 2%, #000 0%, transparent 66%);
+  mask-image:radial-gradient(118% 78% at 74% 2%, #000 0%, transparent 66%);
+}
+
+/* =========================================================================
+   NAV
+   ========================================================================= */
+.nav--scrolled{
+  background:rgba(246,248,252,.82);backdrop-filter:saturate(1.4) blur(18px);
+  border-bottom:1px solid rgba(26,115,232,.12);
+  box-shadow:0 1px 0 rgba(255,255,255,.7) inset, 0 8px 24px -18px rgba(20,27,45,.45);
+}
+.nav__links a:hover{color:var(--blue-600);background:var(--blue-50)}
+.nav__signin:hover{background:var(--blue-50);color:var(--blue-700)}
+
+/* =========================================================================
+   BUTTONS
+   ========================================================================= */
+.btn{border-radius:10px;font-weight:600}
+.btn--primary{box-shadow:0 8px 22px -8px rgba(26,115,232,.5)}
+.btn--primary:hover{box-shadow:0 14px 32px -8px rgba(26,115,232,.6)}
+.btn--secondary{background:#fff;border-color:var(--slate-300)}
+.btn--secondary:hover{border-color:var(--blue-300);background:var(--blue-50);color:var(--blue-700)}
+.btn--gold{background:linear-gradient(135deg,var(--amber-400),var(--amber-600));color:#3A2406}
+
+/* =========================================================================
+   HERO bits
+   ========================================================================= */
+.hero__badge .pill{color:var(--blue-600);background:var(--blue-50);border-color:var(--blue-200)}
+.hero__trust .ti i{color:var(--blue-500)}
+.hero__glow::before{background:var(--glow-emerald);width:820px;height:820px}
+.hero__glow::after{background:var(--glow-gold);opacity:.85}
+.vbadge{color:var(--blue-700);background:var(--blue-50);border-color:var(--blue-200)}
+.float-chip--intro .float-chip__ic{background:var(--rose-50);border-color:#F7C6D8}
+.float-chip--intro .float-chip__ic i{color:var(--rose-500)}
+.float-chip--verify .float-chip__ic{background:var(--green-50);border-color:#C7E8C9}
+.float-chip--verify .float-chip__ic i{color:var(--green-600)}
+.hcard__logo{background:linear-gradient(150deg,var(--blue-400),var(--blue-700))}
+.hcard__ring{background:linear-gradient(135deg,var(--blue-50),var(--slate-100))}
+
+/* =========================================================================
+   SHELF LOGO CLOUD (proof strip restyle)
+   ========================================================================= */
+.proof{padding:18px 0 4px}
+.proof__label{color:var(--fg-subtle);letter-spacing:.16em;margin-bottom:26px}
+.proof__row{gap:20px 44px;opacity:1}
+.proof__item{color:var(--fg-subtle);font-weight:600;font-size:16px;filter:grayscale(1);opacity:.62;transition:opacity .25s,filter .25s,color .25s}
+.proof__item:hover{filter:grayscale(0);opacity:1;color:var(--fg-default)}
+.proof__item i{color:var(--slate-300)}
+.proof__item:hover i{color:var(--blue-400)}
+
+/* =========================================================================
+   HERO PRODUCT SHOT (Shelf hero image)
+   ========================================================================= */
+.heroshot{position:relative;margin-top:14px;padding-bottom:8px}
+.heroshot__frame{
+  position:relative;z-index:1;border-radius:var(--radius-2xl);overflow:hidden;
+  border:1px solid var(--slate-200);background:#fff;
+  box-shadow:var(--shadow-xl);
+}
+.heroshot__bar{display:flex;align-items:center;gap:7px;padding:13px 16px;border-bottom:1px solid var(--slate-150);background:var(--slate-50)}
+.heroshot__dot{width:11px;height:11px;border-radius:50%}
+.heroshot__dot--r{background:#FF5F57}.heroshot__dot--y{background:#FEBC2E}.heroshot__dot--g{background:#28C840}
+.heroshot__url{margin-left:14px;font-family:var(--font-mono);font-size:12px;color:var(--fg-subtle);background:#fff;border:1px solid var(--slate-200);border-radius:7px;padding:4px 12px}
+.heroshot image-slot{display:block;width:100%;height:clamp(320px,46vw,620px)}
+.heroshot__glow{position:absolute;inset:0;pointer-events:none}
+.heroshot__glow::before{content:"";position:absolute;width:70%;height:60%;left:50%;top:30%;transform:translateX(-50%);background:radial-gradient(circle,rgba(26,115,232,.14),transparent 70%);filter:blur(10px)}
+
+/* =========================================================================
+   MATERIAL STAT CARDS (white + floating gradient icon chip + trend)
+   ========================================================================= */
+.stats__panel{background:none;box-shadow:none;padding:0;overflow:visible;border-radius:0}
+.stats__panel::before,.stats__panel::after{display:none}
+.stats__head{margin-bottom:46px}
+.stats__head h2{color:var(--fg-strong)}
+.stats__head .eyebrow--gold{color:var(--blue-500)}
+.stats__head .eyebrow--gold::before{background:var(--blue-400)}
+.stats__grid{gap:24px}
+
+/* --- Material chip style --- */
+.mstat{
+  background:#fff;border:1px solid var(--border-subtle);border-radius:var(--radius-xl);
+  box-shadow:var(--shadow-sm);padding:20px 22px 16px;text-align:left;position:relative;
+  transition:transform var(--dur-base) var(--ease-out),box-shadow var(--dur-base) var(--ease-out);
+}
+.mstat:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.mstat__top{display:flex;justify-content:space-between;align-items:flex-start;min-height:52px}
+.mstat__chip{
+  width:62px;height:62px;border-radius:16px;margin-top:-32px;flex:none;
+  display:flex;align-items:center;justify-content:center;color:#fff;
+}
+.mstat__chip i{width:28px;height:28px}
+.mstat--info  .mstat__chip{box-shadow:0 8px 20px -6px rgba(26,115,232,.55)}
+.mstat--success .mstat__chip{box-shadow:0 8px 20px -6px rgba(67,160,71,.5)}
+.mstat--rose  .mstat__chip{box-shadow:0 8px 20px -6px rgba(216,27,96,.5)}
+.mstat--warn  .mstat__chip{box-shadow:0 8px 20px -6px rgba(251,140,0,.5)}
+.mstat__meta{text-align:right}
+.mstat__label{font-size:13px;color:var(--fg-muted);font-weight:500}
+.mstat__num{font-family:var(--font-display);font-weight:700;font-size:clamp(1.8rem,1.4rem+1vw,2.3rem);color:var(--fg-strong);line-height:1.05;letter-spacing:-.02em;margin-top:3px;font-variant-numeric:tabular-nums}
+.mstat__num .u,.mstat__num .s{color:var(--blue-500)}
+.mstat__foot{border-top:1px solid var(--border-subtle);margin-top:16px;padding-top:13px;display:flex;align-items:center;gap:6px;font-size:13px;color:var(--fg-subtle)}
+.mstat__trend{display:inline-flex;align-items:center;gap:3px;font-weight:700;color:var(--green-600)}
+.mstat__trend i{width:15px;height:15px}
+
+/* --- Gradient-fill style (the alternative) --- */
+.stat{text-align:left;padding:24px 22px;border-radius:var(--radius-xl);color:#fff;position:relative;overflow:hidden}
+.stat__ic{width:46px;height:46px;border-radius:12px;background:rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.stat__ic i{width:22px;height:22px;color:#fff}
+.stat:nth-child(1){background:linear-gradient(135deg,var(--info-1),var(--info-2));box-shadow:0 18px 40px -14px rgba(26,115,232,.5)}
+.stat:nth-child(2){background:linear-gradient(135deg,var(--success-1),var(--success-2));box-shadow:0 18px 40px -14px rgba(67,160,71,.45)}
+.stat:nth-child(3){background:linear-gradient(135deg,var(--rose-1),var(--rose-2));box-shadow:0 18px 40px -14px rgba(216,27,96,.45)}
+.stat:nth-child(4){background:linear-gradient(135deg,var(--warn-1),var(--warn-2));box-shadow:0 18px 40px -14px rgba(251,140,0,.45)}
+.stat__n{color:#fff}
+.stat__n .u,.stat__n .s{color:rgba(255,255,255,.92)}
+.stat__l{color:rgba(255,255,255,.92);margin-top:8px;font-weight:500}
+.stats__note{color:var(--fg-subtle);text-align:center;margin-top:28px}
+
+/* =========================================================================
+   SECTION shells + cards
+   ========================================================================= */
+.section--warm{background:#fff;border-color:var(--border-default)}
+.section__head .eyebrow--center{color:var(--blue-500)}
+.section__head .eyebrow--center::before{background:var(--blue-400)}
+
+.ccard{border-radius:var(--radius-xl)}
+.ccard::before{background:linear-gradient(90deg,var(--blue-500),var(--info-1))}
+.ccard__ic{background:var(--blue-50);border-color:var(--blue-100)}
+.ccard__ic i{color:var(--blue-600)}
+.ccard__meta i{color:var(--blue-500)}
+.ccard:nth-child(2) .ccard__ic{background:var(--green-50);border-color:#CDEBCF}
+.ccard:nth-child(2) .ccard__ic i{color:var(--green-600)}
+.ccard:nth-child(2)::before{background:linear-gradient(90deg,var(--success-1),var(--success-2))}
+.ccard:nth-child(3) .ccard__ic{background:var(--rose-50);border-color:#F7CFDE}
+.ccard:nth-child(3) .ccard__ic i{color:var(--rose-500)}
+.ccard:nth-child(3)::before{background:linear-gradient(90deg,var(--rose-1),var(--rose-2))}
+
+.steps__line{background:linear-gradient(90deg,var(--blue-300),var(--info-1))}
+.step__n{background:var(--grad-emerald);box-shadow:0 8px 20px -8px rgba(26,115,232,.5)}
+.step__icon{color:var(--blue-600)}
+
+/* =========================================================================
+   SHELF ALTERNATING FEATURE ROWS
+   ========================================================================= */
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;padding:8px 0}
+.frow + .frow{margin-top:84px}
+.frow--flip .frow__copy{order:2}
+.frow--flip .frow__media{order:1}
+@media(max-width:880px){.frow{grid-template-columns:1fr;gap:34px}.frow--flip .frow__copy{order:0}.frow--flip .frow__media{order:0}.frow + .frow{margin-top:60px}}
+.frow__copy h2{font-family:var(--font-display);font-size:clamp(1.6rem,1.2rem+1.2vw,2.1rem);color:var(--fg-strong);margin:16px 0 14px;line-height:1.12}
+.frow__copy p{font-size:var(--text-lead);line-height:1.62;color:var(--fg-muted);margin:0 0 22px;max-width:44ch}
+.frow__list{display:flex;flex-direction:column;gap:13px;margin-bottom:26px}
+.frow__li{display:flex;gap:11px;align-items:flex-start;font-size:15px;color:var(--fg-default)}
+.frow__li i{width:20px;height:20px;color:var(--blue-500);flex:none;margin-top:1px}
+.frow__cta{display:inline-flex;align-items:center;gap:7px;font-weight:600;color:var(--blue-600);font-size:15px}
+.frow__cta i{width:16px;height:16px;transition:transform var(--dur-base)}
+.frow__cta:hover i{transform:translateX(3px)}
+.frow__media{position:relative}
+.frow__frame{position:relative;border-radius:var(--radius-2xl);overflow:hidden;border:1px solid var(--slate-200);background:#fff;box-shadow:var(--shadow-lg)}
+.frow__frame image-slot{display:block;width:100%;height:clamp(280px,32vw,400px)}
+.frow__badge{
+  position:absolute;z-index:2;background:#fff;border:1px solid var(--slate-200);border-radius:14px;
+  box-shadow:var(--shadow-lg);padding:12px 14px;display:flex;align-items:center;gap:11px;
+}
+.frow__badge .ic{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff;flex:none}
+.frow__badge .ic i{width:19px;height:19px}
+.frow__badge .t{font-size:12.5px;font-weight:700;color:var(--fg-strong);line-height:1.2}
+.frow__badge .s{font-size:11px;color:var(--fg-muted);margin-top:1px}
+.frow__badge--tl{top:-18px;left:-18px}
+.frow__badge--br{bottom:-18px;right:-18px}
+@media(max-width:520px){.frow__badge--tl{left:-6px}.frow__badge--br{right:-6px}}
+
+/* =========================================================================
+   READINESS explainer
+   ========================================================================= */
+.ready__copy .eyebrow{color:var(--blue-500)}
+.ready__copy .eyebrow::before{background:var(--blue-400)}
+.ready__li i{color:var(--blue-500)}
+.ready__panel-head .vc-eyebrow{color:var(--blue-500)}
+.bigring__verdict{color:var(--blue-700);background:var(--blue-50);border-color:var(--blue-200)}
+.dimrow__fill{background:var(--grad-emerald)}
+.dimrow__track{background:var(--slate-150);border-color:var(--border-subtle)}
+
+/* =========================================================================
+   INVESTOR band (ink + amber)
+   ========================================================================= */
+.invest__panel::after{background:var(--glow-gold)}
+.invest__in .eyebrow--gold{color:var(--amber-400)}
+.invest__in .eyebrow--gold::before{background:var(--amber-400)}
+.invest__li i{color:var(--amber-400)}
+.invest__li:hover{border-color:rgba(251,140,0,.4)}
+
+/* =========================================================================
+   FEATURED projects
+   ========================================================================= */
+.pcard{border-radius:var(--radius-xl)}
+.pcard__banner{background:linear-gradient(135deg,#2A3656,#141B2D)}
+.pcard__banner--green{background:linear-gradient(135deg,var(--info-1),var(--blue-700))}
+.pcard__banner--gold{background:linear-gradient(135deg,var(--warn-1),var(--amber-600))}
+.pcard__cat{color:var(--blue-500)}
+.pcard__ready .v{color:var(--blue-600)}
+
+/* =========================================================================
+   FINAL CTA + FOOTER
+   ========================================================================= */
+.fcta .eyebrow--center{color:var(--blue-500)}
+.fcta .eyebrow--center::before{background:var(--blue-400)}
+.footer__loc i{color:var(--amber-400)}
+
+::selection{background:var(--blue-200);color:var(--ink-900)}

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vestra Connect — Where Jordan's projects meet opportunity</title>
+  <meta name="description" content="Vestra Connect is Jordan's trusted network connecting verified projects with the investors and partners who can move them forward — built on verification, readiness signals, and warm introductions.">
+  <link rel="stylesheet" href="colors_and_type.css">
+  <link rel="stylesheet" href="premium2/aurora.css">
+  <link rel="stylesheet" href="premium2/landing.css">
+  <link rel="stylesheet" href="premium2/sections.css">
+  <script>document.documentElement.classList.add('preanim');</script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="premium2/image-slot.js"></script>
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav">
+    <div class="wrap nav__in">
+      <img class="nav__logo" src="premium2/logo-aurora.svg" alt="Vestra Connect">
+      <nav class="nav__links">
+        <a href="#founders">For founders</a>
+        <a href="#investors">For investors</a>
+        <a href="#how">How it works</a>
+        <a href="#readiness">Readiness</a>
+      </nav>
+      <div class="nav__cta">
+        <a class="nav__signin" href="#">Sign in</a>
+        <a class="btn btn--primary" href="#"><i data-lucide="arrow-right"></i>Get started</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <canvas class="hero__net" id="heroNet"></canvas>
+    <div class="hero__aurora"><span class="blob blob--1"></span><span class="blob blob--2"></span><span class="blob blob--3"></span></div>
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <div class="hero__badge reveal">
+          <span class="pill"><i data-lucide="shield-check"></i>Verified</span>
+          <span>Jordan's trusted home for <b>projects &amp; opportunity</b></span>
+        </div>
+        <h1 class="reveal" data-d="1">Where Jordan's projects meet <span class="grad">opportunity</span>.</h1>
+        <p class="hero__lead reveal" data-d="2">A trusted network connecting verified projects with the investors and partners who can move them forward — built on readiness, not noise.</p>
+        <div class="hero__cta reveal" data-d="3">
+          <a class="btn btn--primary btn--lg" href="#"><i data-lucide="rocket"></i>Showcase your project</a>
+          <a class="btn btn--secondary btn--lg" href="#"><i data-lucide="search"></i>Explore projects</a>
+        </div>
+        <div class="hero__trust reveal" data-d="4">
+          <span class="ti"><i data-lucide="badge-check"></i><span><b>340+</b> verified projects</span></span>
+          <span class="ti"><i data-lucide="users"></i><span><b>900+</b> investors &amp; partners</span></span>
+          <span class="ti"><i data-lucide="handshake"></i><span><b>94%</b> warm intros</span></span>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="hero__stage">
+          <div class="hcard reveal">
+            <div class="hcard__head">
+              <div class="hcard__logo">B</div>
+              <div style="flex:1">
+                <div class="hcard__cat">Small business · Agri-food</div>
+                <h3 class="hcard__name">Baladi olive cooperative</h3>
+              </div>
+            </div>
+            <span class="vbadge"><i data-lucide="badge-check"></i>Verified project</span>
+            <div class="hcard__ring">
+              <div class="ring">
+                <svg width="96" height="96" viewBox="0 0 96 96">
+                  <circle cx="48" cy="48" r="40" fill="none" stroke="var(--slate-150)" stroke-width="9"></circle>
+                  <circle data-ring="88" cx="48" cy="48" r="40" fill="none" stroke="url(#ringGrad)" stroke-width="9" stroke-linecap="round"></circle>
+                  <defs><linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3F7BFF"></stop><stop offset="1" stop-color="#22D3EE"></stop></linearGradient></defs>
+                </svg>
+                <div class="ring__val"><span class="ring__num" data-ringnum>0</span><span class="ring__lbl">Ready</span></div>
+              </div>
+              <div class="hcard__dims">
+                <div class="dim"><span class="dim__l">Team</span><span class="dim__v">90</span><span class="dim__track"><span class="dim__fill" data-fill="90"></span></span></div>
+                <div class="dim"><span class="dim__l">Traction</span><span class="dim__v">78</span><span class="dim__track"><span class="dim__fill" data-fill="78"></span></span></div>
+                <div class="dim"><span class="dim__l">Verification</span><span class="dim__v">100</span><span class="dim__track"><span class="dim__fill" data-fill="100"></span></span></div>
+              </div>
+            </div>
+            <div class="hcard__foot">
+              <div><div class="n">JOD 120K</div><div class="l">Funding ask</div></div>
+              <div style="text-align:right"><div class="n">JOD 310K</div><div class="l">Revenue / yr</div></div>
+            </div>
+          </div>
+
+          <div class="float-chip float-chip--intro">
+            <span class="float-chip__ic g-rose"><i data-lucide="sparkles"></i></span>
+            <div><div class="t">New introduction</div><div class="s">An accredited investor wants to connect</div></div>
+          </div>
+          <div class="float-chip float-chip--verify">
+            <span class="float-chip__ic g-success"><i data-lucide="shield-check"></i></span>
+            <div><div class="t">Identity verified</div><div class="s">Confirmed by Vestra</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROOF / LOGO CLOUD ===================== -->
+  <section class="wrap proof">
+    <div class="proof__label">Trusted by Jordan's innovation ecosystem</div>
+    <div class="proof__mask">
+      <div class="proof__row" id="proofRow">
+        <span class="proof__item"><i data-lucide="building-2"></i>King Hussein Fund</span>
+        <span class="proof__item"><i data-lucide="landmark"></i>Jordan Innovation</span>
+        <span class="proof__item"><i data-lucide="graduation-cap"></i>JUST Ventures</span>
+        <span class="proof__item"><i data-lucide="briefcase"></i>Oasis500</span>
+        <span class="proof__item"><i data-lucide="globe"></i>MENA Angels</span>
+        <span class="proof__item"><i data-lucide="gem"></i>Endeavor</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CATEGORIES ===================== -->
+  <section class="section" id="founders">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="eyebrow eyebrow--center">Built for serious projects</span>
+        <h2>Three kinds of projects. One trusted standard.</h2>
+        <p>University innovations, operating small businesses, and product-led tech — all verified, scored, and ready to meet the right opportunity.</p>
+      </div>
+      <div class="cats">
+        <article class="ccard reveal" data-d="1">
+          <span class="ccard__ic g-info"><i data-lucide="graduation-cap"></i></span>
+          <span class="ccard__tag">University projects</span>
+          <h3>Academic innovation</h3>
+          <p>Student innovators showcase prototypes and research with faculty backing — turning academic work into credible, investable opportunities.</p>
+          <div class="ccard__meta"><span class="n">120+</span><span class="l">projects · 6 universities</span><i data-lucide="arrow-up-right"></i></div>
+        </article>
+        <article class="ccard reveal" data-d="2">
+          <span class="ccard__ic g-success"><i data-lucide="store"></i></span>
+          <span class="ccard__tag">Small businesses</span>
+          <h3>Local &amp; operating</h3>
+          <p>Revenue-bearing businesses raise to expand — with transparent numbers, a clear growth plan, and verified financials.</p>
+          <div class="ccard__meta"><span class="n">JOD 4.8M</span><span class="l">raised to expand</span><i data-lucide="arrow-up-right"></i></div>
+        </article>
+        <article class="ccard reveal" data-d="3">
+          <span class="ccard__ic g-violet"><i data-lucide="cpu"></i></span>
+          <span class="ccard__tag">Tech projects</span>
+          <h3>Product-led &amp; scalable</h3>
+          <p>Founders share traction, recurring revenue, and technical readiness with investors who understand how to scale.</p>
+          <div class="ccard__meta"><span class="n">41</span><span class="l">tech projects funded</span><i data-lucide="arrow-up-right"></i></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== METRICS + CHART ===================== -->
+  <section class="section section--warm section--tight">
+    <div class="wrap">
+      <div class="section__head section__head--left reveal" style="margin-bottom:40px">
+        <span class="eyebrow">The network in numbers</span>
+        <h2>Momentum you can verify.</h2>
+      </div>
+      <div class="metrics">
+        <div class="mstats reveal" data-d="1">
+          <div class="mstat mstat--info">
+            <div class="mstat__top">
+              <span class="mstat__chip g-info"><i data-lucide="shield-check"></i></span>
+              <div class="mstat__meta"><div class="mstat__label">Verified projects</div><div class="mstat__num" data-count="340" data-suf="+">0</div></div>
+            </div>
+            <div class="mstat__foot"><span class="mstat__trend"><i data-lucide="trending-up"></i>+12%</span> this quarter</div>
+          </div>
+          <div class="mstat mstat--success">
+            <div class="mstat__top">
+              <span class="mstat__chip g-success"><i data-lucide="trending-up"></i></span>
+              <div class="mstat__meta"><div class="mstat__label">Opportunity listed</div><div class="mstat__num" data-count="12" data-pre="JOD " data-suf="M">0</div></div>
+            </div>
+            <div class="mstat__foot"><span class="mstat__trend"><i data-lucide="trending-up"></i>+8%</span> vs last month</div>
+          </div>
+          <div class="mstat mstat--rose">
+            <div class="mstat__top">
+              <span class="mstat__chip g-rose"><i data-lucide="users"></i></span>
+              <div class="mstat__meta"><div class="mstat__label">Investors &amp; partners</div><div class="mstat__num" data-count="900" data-suf="+">0</div></div>
+            </div>
+            <div class="mstat__foot"><span class="mstat__trend"><i data-lucide="trending-up"></i>+24%</span> year over year</div>
+          </div>
+          <div class="mstat mstat--warn">
+            <div class="mstat__top">
+              <span class="mstat__chip g-warn"><i data-lucide="handshake"></i></span>
+              <div class="mstat__meta"><div class="mstat__label">Warm introductions</div><div class="mstat__num" data-count="94" data-suf="%">0</div></div>
+            </div>
+            <div class="mstat__foot"><span class="mstat__trend"><i data-lucide="trending-up"></i>+3%</span> acceptance rate</div>
+          </div>
+        </div>
+
+        <div class="chartcard reveal" data-d="2">
+          <div class="chartcard__head">
+            <div>
+              <div class="chartcard__title">Opportunity listed</div>
+              <div class="chartcard__sub">Rolling 9 months · JOD millions</div>
+            </div>
+            <div>
+              <div class="chartcard__big" data-count="12" data-pre="JOD " data-suf="M">0</div>
+              <div class="chartcard__delta"><i data-lucide="arrow-up-right"></i>+38% YTD</div>
+            </div>
+          </div>
+          <div class="chartwrap">
+            <svg data-chart data-points="[2.1,2.6,3.4,3.1,4.2,5.6,6.9,9.3,12]"></svg>
+            <div class="chartcard__x"><span>OCT</span><span>DEC</span><span>FEB</span><span>APR</span><span>JUN</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HOW IT WORKS ===================== -->
+  <section class="section" id="how">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="eyebrow eyebrow--center">How it works</span>
+        <h2>From profile to introduction in three steps.</h2>
+        <p>Trust is engineered into every step — verification, a readiness signal, then warm, mutual introductions.</p>
+      </div>
+      <div class="steps">
+        <div class="steps__line"></div>
+        <div class="step reveal" data-d="1">
+          <div class="step__n">1</div>
+          <h3>Build your profile</h3>
+          <p>Create a structured project profile — the ask, traction, and team — then complete identity and business verification to earn trust badges.</p>
+          <span class="step__icon"><i data-lucide="shield-check"></i>Identity verified</span>
+        </div>
+        <div class="step reveal" data-d="2">
+          <div class="step__n">2</div>
+          <h3>Earn your readiness signal</h3>
+          <p>Vestra scores your project across team, traction, verification, and financial clarity — a single signal investors learn to trust.</p>
+          <span class="step__icon"><i data-lucide="gauge"></i>Readiness scored</span>
+        </div>
+        <div class="step reveal" data-d="3">
+          <div class="step__n">3</div>
+          <h3>Get trusted introductions</h3>
+          <p>Credible investors discover you and request warm introductions through mutual connections. No cold outreach, ever.</p>
+          <span class="step__icon"><i data-lucide="handshake"></i>Warm intro sent</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURE ROWS (Shelf) ===================== -->
+  <section class="section section--warm">
+    <div class="wrap">
+      <div class="frow">
+        <div class="frow__copy reveal">
+          <span class="eyebrow">Verified profiles</span>
+          <h3>Every project is who it says it is.</h3>
+          <p>Identity and business verification happen before a project ever reaches an investor — so the people you meet, and the numbers you see, are real.</p>
+          <div class="frow__list">
+            <div class="frow__li"><i data-lucide="check-circle-2"></i>Government-ID and business-registry checks</div>
+            <div class="frow__li"><i data-lucide="check-circle-2"></i>Confirmed founders, team, and ownership</div>
+            <div class="frow__li"><i data-lucide="check-circle-2"></i>A verification badge investors recognise</div>
+          </div>
+          <a class="frow__cta" href="#">How verification works<i data-lucide="arrow-right"></i></a>
+        </div>
+        <div class="frow__media reveal" data-d="1">
+          <div class="frow__frame">
+            <div class="frow__bar"><span class="frow__dot frow__dot--r"></span><span class="frow__dot frow__dot--y"></span><span class="frow__dot frow__dot--g"></span><span class="frow__url">app.vestra.co/verify</span></div>
+            <image-slot id="feat-verify" shape="rect" placeholder="Verification dashboard — or warm photo of founders at work"></image-slot>
+          </div>
+          <div class="frow__badge frow__badge--tl"><span class="ic g-success"><i data-lucide="badge-check"></i></span><div><div class="t">Identity verified</div><div class="s">Confirmed by Vestra</div></div></div>
+        </div>
+      </div>
+
+      <div class="frow frow--flip">
+        <div class="frow__copy reveal">
+          <span class="eyebrow">Trusted introductions</span>
+          <h3>Warm intros — never cold outreach.</h3>
+          <p>Credible investors discover your project and request an introduction through mutual, opted-in connections. You stay in control of who you meet.</p>
+          <div class="frow__list">
+            <div class="frow__li"><i data-lucide="check-circle-2"></i>Mutual-connection, opt-in introductions</div>
+            <div class="frow__li"><i data-lucide="check-circle-2"></i>No cold spam, ever</div>
+            <div class="frow__li"><i data-lucide="check-circle-2"></i>Context shared before you connect</div>
+          </div>
+          <a class="frow__cta" href="#">See how intros happen<i data-lucide="arrow-right"></i></a>
+        </div>
+        <div class="frow__media reveal" data-d="1">
+          <div class="frow__frame">
+            <div class="frow__bar"><span class="frow__dot frow__dot--r"></span><span class="frow__dot frow__dot--y"></span><span class="frow__dot frow__dot--g"></span><span class="frow__url">app.vestra.co/intros</span></div>
+            <image-slot id="feat-intro" shape="rect" placeholder="Introductions inbox — or photo of an investor meeting"></image-slot>
+          </div>
+          <div class="frow__badge frow__badge--br"><span class="ic g-rose"><i data-lucide="sparkles"></i></span><div><div class="t">New introduction</div><div class="s">An investor wants to connect</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== READINESS ===================== -->
+  <section class="section" id="readiness">
+    <div class="wrap">
+      <div class="ready__grid">
+        <div class="ready__copy reveal">
+          <span class="eyebrow">Readiness signal</span>
+          <h2>One score investors learn to trust.</h2>
+          <p>Every project earns a 0–100 readiness signal — evidence-backed, always current, and built from four weighted dimensions.</p>
+          <div class="ready__list">
+            <div class="ready__li"><i data-lucide="layers"></i><div><b>Four weighted dimensions</b><span>Team, traction, verification, and financial clarity roll up into one 0–100 signal.</span></div></div>
+            <div class="ready__li"><i data-lucide="lock"></i><div><b>Evidence, not claims</b><span>Every dimension is backed by verified documents — investors see what's confirmed.</span></div></div>
+            <div class="ready__li"><i data-lucide="refresh-cw"></i><div><b>Always current</b><span>The score updates as a project ships traction and completes verification steps.</span></div></div>
+          </div>
+        </div>
+        <div class="ready__panel reveal" data-d="1">
+          <div class="ready__panel-head">
+            <span class="eyebrow">Readiness · Baladi olive cooperative</span>
+          </div>
+          <div class="bigring">
+            <div class="bigring__ring">
+              <svg width="148" height="148" viewBox="0 0 148 148">
+                <circle cx="74" cy="74" r="62" fill="none" stroke="var(--slate-150)" stroke-width="12"></circle>
+                <circle data-ring="88" cx="74" cy="74" r="62" fill="none" stroke="url(#bigGrad)" stroke-width="12" stroke-linecap="round"></circle>
+                <defs><linearGradient id="bigGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3F7BFF"></stop><stop offset="1" stop-color="#22D3EE"></stop></linearGradient></defs>
+              </svg>
+              <div class="bigring__val"><span class="bigring__num" data-ringnum>0</span><span class="bigring__lbl">Ready</span></div>
+            </div>
+            <div class="bigring__side">
+              <span class="bigring__verdict"><i data-lucide="check-circle-2"></i>Investor-ready</span>
+              <p>Strong team and full verification; traction and financial clarity trending up quarter over quarter.</p>
+            </div>
+          </div>
+          <div class="dims">
+            <div class="dimrow"><span class="dimrow__l"><i data-lucide="users"></i>Team &amp; founders</span><span class="dimrow__v">90</span><span class="dimrow__track"><span class="dimrow__fill" data-fill="90"></span></span></div>
+            <div class="dimrow"><span class="dimrow__l"><i data-lucide="trending-up"></i>Traction &amp; revenue</span><span class="dimrow__v">78</span><span class="dimrow__track"><span class="dimrow__fill" data-fill="78"></span></span></div>
+            <div class="dimrow"><span class="dimrow__l"><i data-lucide="badge-check"></i>Verification</span><span class="dimrow__v">100</span><span class="dimrow__track"><span class="dimrow__fill" data-fill="100"></span></span></div>
+            <div class="dimrow"><span class="dimrow__l"><i data-lucide="file-check"></i>Financial clarity</span><span class="dimrow__v">72</span><span class="dimrow__track"><span class="dimrow__fill" data-fill="72"></span></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== INVESTOR BAND ===================== -->
+  <section class="section section--tight" id="investors">
+    <div class="wrap">
+      <div class="invest__panel reveal">
+        <div class="invest__in">
+          <div>
+            <span class="eyebrow" style="color:var(--violet-400)">For investors &amp; partners</span>
+            <h2>Discover credible local projects — without the noise.</h2>
+            <p>Browse verified projects by readiness, category, and ask. Request warm introductions through people you already trust.</p>
+            <a class="btn btn--light btn--lg" href="#"><i data-lucide="compass"></i>Explore opportunities</a>
+          </div>
+          <div class="invest__list">
+            <div class="invest__li"><i data-lucide="filter"></i><div><b>Filter by readiness</b><span>Sort the network by verified readiness score, category, and funding ask.</span></div></div>
+            <div class="invest__li"><i data-lucide="badge-check"></i><div><b>Verified before you meet</b><span>Identity, business, and financials confirmed — so your time goes to real opportunities.</span></div></div>
+            <div class="invest__li"><i data-lucide="handshake"></i><div><b>Warm, mutual intros</b><span>Connect through opted-in mutual connections — never cold, never spam.</span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURED PROJECTS ===================== -->
+  <section class="section section--warm">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="eyebrow eyebrow--center">Featured projects</span>
+        <h2>Verified opportunities on the network now.</h2>
+      </div>
+      <div class="feat">
+        <article class="pcard reveal" data-d="1">
+          <div class="pcard__banner pcard__banner--green"><span class="pcard__verify"><i data-lucide="badge-check"></i>Verified</span><div class="pcard__logo">B</div></div>
+          <div class="pcard__body">
+            <span class="pcard__cat">Small business · Agri-food</span>
+            <h3 class="pcard__name">Baladi olive cooperative</h3>
+            <p class="pcard__desc">A 40-farmer cooperative bringing cold-pressed Jordanian olive oil to regional retail.</p>
+            <div class="pcard__stats">
+              <div class="pcard__stat"><div class="n">JOD 120K</div><div class="l">Funding ask</div></div>
+              <div class="pcard__stat"><div class="n">JOD 310K</div><div class="l">Revenue</div></div>
+              <div class="pcard__stat pcard__stat--ready"><div class="pcard__ready"><span class="v">88</span></div><div class="l">Ready</div></div>
+            </div>
+          </div>
+        </article>
+        <article class="pcard reveal" data-d="2">
+          <div class="pcard__banner"><span class="pcard__verify"><i data-lucide="badge-check"></i>Verified</span><div class="pcard__logo">N</div></div>
+          <div class="pcard__body">
+            <span class="pcard__cat">Tech · Logistics</span>
+            <h3 class="pcard__name">Nuqta delivery OS</h3>
+            <p class="pcard__desc">Routing and dispatch software for Amman's independent couriers, with live tracking.</p>
+            <div class="pcard__stats">
+              <div class="pcard__stat"><div class="n">JOD 90K</div><div class="l">Funding ask</div></div>
+              <div class="pcard__stat"><div class="n">2.4K</div><div class="l">Users</div></div>
+              <div class="pcard__stat pcard__stat--ready"><div class="pcard__ready"><span class="v">82</span></div><div class="l">Ready</div></div>
+            </div>
+          </div>
+        </article>
+        <article class="pcard reveal" data-d="3">
+          <div class="pcard__banner pcard__banner--gold"><span class="pcard__verify"><i data-lucide="badge-check"></i>Verified</span><div class="pcard__logo">H</div></div>
+          <div class="pcard__body">
+            <span class="pcard__cat">University · Health-tech</span>
+            <h3 class="pcard__name">Hayat diagnostics</h3>
+            <p class="pcard__desc">A JUST research team's low-cost anemia screening device, prototype validated in clinic.</p>
+            <div class="pcard__stats">
+              <div class="pcard__stat"><div class="n">JOD 60K</div><div class="l">Funding ask</div></div>
+              <div class="pcard__stat"><div class="n">3</div><div class="l">Patents</div></div>
+              <div class="pcard__stat pcard__stat--ready"><div class="pcard__ready"><span class="v">76</span></div><div class="l">Ready</div></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FINAL CTA ===================== -->
+  <section class="fcta">
+    <div class="fcta__glow"></div>
+    <div class="wrap fcta__in">
+      <span class="eyebrow eyebrow--center reveal">Join the network</span>
+      <h2 class="reveal" data-d="1">Where Jordan's best projects meet real opportunity.</h2>
+      <p class="reveal" data-d="2">Showcase a project or discover credible ones — built on verification, readiness, and trust.</p>
+      <div class="fcta__cta reveal" data-d="3">
+        <a class="btn btn--primary btn--lg" href="#"><i data-lucide="rocket"></i>Showcase your project</a>
+        <a class="btn btn--secondary btn--lg" href="#"><i data-lucide="compass"></i>Explore as an investor</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div>
+          <img class="footer__logo" src="assets/logo-wordmark-inverse.svg" alt="Vestra Connect">
+          <p class="footer__about">Jordan's trusted network connecting verified projects with the investors and partners who can move them forward.</p>
+          <span class="footer__loc"><i data-lucide="map-pin"></i>Amman, Jordan</span>
+        </div>
+        <div><h4>Product</h4><ul><li><a href="#">For founders</a></li><li><a href="#">For investors</a></li><li><a href="#">Readiness signal</a></li><li><a href="#">Verification</a></li></ul></div>
+        <div><h4>Company</h4><ul><li><a href="#">About</a></li><li><a href="#">Trust &amp; safety</a></li><li><a href="#">Careers</a></li><li><a href="#">Contact</a></li></ul></div>
+        <div><h4>Resources</h4><ul><li><a href="#">Help center</a></li><li><a href="#">Guides</a></li><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li></ul></div>
+      </div>
+      <div class="footer__bar"><span>© 2026 Vestra Connect. All rights reserved.</span><span>Built for serious projects in Jordan.</span></div>
+    </div>
+  </footer>
+
+  <script>
+    /* duplicate proof items for seamless marquee */
+    (function(){var r=document.getElementById('proofRow');if(r){r.innerHTML+=r.innerHTML;}})();
+  </script>
+  <script src="premium2/network.js"></script>
+  <script src="premium2/main.js"></script>
+</body>
+</html>

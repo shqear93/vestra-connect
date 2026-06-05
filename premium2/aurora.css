@@ -1,0 +1,177 @@
+/* =========================================================================
+   VESTRA CONNECT — "AURORA" PREMIUM THEME  (v2)
+   Light & airy · vivid blue→cyan · soft layered depth · living motion.
+   A clean break from the calm-navy/emerald system. Loaded AFTER
+   colors_and_type.css (which supplies the fonts + base scale we keep).
+   ========================================================================= */
+:root{
+  /* ---- Brand spectrum: electric blue → cyan (the signature) ---- */
+  --blue-50:#EEF4FF;  --blue-100:#DCE8FF; --blue-200:#BBD2FF; --blue-300:#8AB2FF;
+  --blue-400:#5A8DFF; --blue-500:#2F6BFF; --blue-600:#1D54E8; --blue-700:#1640BE; --blue-800:#143397;
+  --cyan-300:#7DE3F4; --cyan-400:#34CFEC; --cyan-500:#15B6D6; --cyan-600:#0E94B3;
+  --violet-400:#9E7CFF; --violet-500:#7C5CFC;
+
+  /* ---- Material accent ramps for icon chips (richer, glossier) ---- */
+  --info-1:#5A8DFF;  --info-2:#2F6BFF;
+  --cyan-1:#3FD6F0;  --cyan-2:#15B6D6;
+  --success-1:#34D399; --success-2:#0E9F6E;
+  --rose-1:#FB7BB0;  --rose-2:#EC4899;
+  --warn-1:#FFC15A;  --warn-2:#F59E0B;
+  --violet-1:#A98BFF; --violet-2:#7C5CFC;
+  --dark-1:#2A3550;  --dark-2:#0E1422;
+
+  /* ---- supporting solids ---- */
+  --green-500:#0E9F6E; --green-600:#057A55; --green-50:#E6F7F0;
+  --rose-500:#EC4899;  --rose-50:#FDECF5;
+  --amber-500:#F59E0B; --amber-600:#D97706; --amber-50:#FEF5E5;
+
+  /* ---- neutrals: cool, airy near-white + deep navy ink ---- */
+  --slate-50:#F7F9FD; --slate-100:#EFF3FB; --slate-150:#E7EDF7; --slate-200:#DCE4F1;
+  --slate-300:#C4D0E4; --slate-400:#94A2BE;
+  --ink-950:#070B16; --ink-900:#0B1220; --ink-850:#0F1A2E; --ink-800:#15233C; --ink-700:#1E3252;
+
+  /* ---------------- SEMANTIC REMAP ---------------- */
+  --bg-canvas:        #F7F9FD;
+  --bg-surface:       #FFFFFF;
+  --bg-surface-warm:  #FFFFFF;
+  --bg-subtle:        var(--slate-100);
+  --bg-inset:         var(--slate-50);
+  --bg-inverse:       var(--ink-900);
+  --bg-inverse-2:     var(--ink-950);
+
+  --fg-strong:  #0C1426;
+  --fg-default: #2A3650;
+  --fg-muted:   #5A6884;
+  --fg-subtle:  #8A96AE;
+  --fg-on-dark: #EAF1FF;
+  --fg-on-dark-muted: #9DACC8;
+
+  --accent:        var(--blue-500);
+  --accent-hover:  var(--blue-600);
+  --accent-press:  var(--blue-700);
+  --accent-fg:     #FFFFFF;
+  --premium:       var(--violet-500);
+
+  --border-subtle:  #EEF2FA;
+  --border-default: var(--slate-200);
+  --border-strong:  var(--slate-300);
+  --border-accent:  var(--blue-200);
+  --border-on-dark: rgba(255,255,255,0.10);
+
+  --success: var(--green-500); --success-bg: var(--green-50); --success-fg:#057A55;
+  --warning: var(--amber-600); --warning-bg: var(--amber-50); --warning-fg:#B45309;
+  --verified: var(--blue-500); --verified-bg: var(--blue-50);
+
+  /* display stays the editorial serif we already have */
+  --font-display: 'Spectral', 'Georgia', serif;
+
+  --radius-md: 12px; --radius-lg: 16px; --radius-xl: 20px; --radius-2xl: 28px;
+
+  /* Shadows — soft, cool, layered (premium depth) */
+  --shadow-xs: 0 1px 2px rgba(15,30,65,0.05);
+  --shadow-sm: 0 1px 2px rgba(15,30,65,0.04), 0 6px 16px -10px rgba(15,30,65,0.14);
+  --shadow-md: 0 6px 18px -10px rgba(15,30,65,0.16), 0 18px 40px -22px rgba(15,30,65,0.22);
+  --shadow-lg: 0 12px 28px -14px rgba(15,30,65,0.20), 0 36px 70px -30px rgba(15,30,65,0.30);
+  --shadow-xl: 0 22px 50px -22px rgba(11,22,48,0.28), 0 60px 110px -44px rgba(11,22,48,0.40);
+  --shadow-blue:  0 14px 34px -10px rgba(47,107,255,0.50);
+  --shadow-cyan:  0 14px 34px -10px rgba(21,182,214,0.45);
+  --shadow-focus: 0 0 0 3px rgba(47,107,255,0.22);
+  --ring-hairline: inset 0 0 0 1px rgba(15,30,65,0.06);
+  --highlight-top: inset 0 1px 0 rgba(255,255,255,0.9);
+  --elev-card:    var(--highlight-top), var(--shadow-md);
+  --elev-card-lg: var(--highlight-top), var(--shadow-lg);
+
+  /* Gradients & atmosphere */
+  --grad-accent:        linear-gradient(135deg, #3F7BFF 0%, #22D3EE 100%);
+  --grad-accent-hover:  linear-gradient(135deg, #2F6BFF 0%, #15B6D6 100%);
+  --grad-ink:      linear-gradient(155deg, #15233C 0%, #0B1220 64%, #070B16 100%);
+  --grad-ink-soft: linear-gradient(155deg, #1E3252 0%, #0F1A2E 100%);
+  --grad-canvas:   radial-gradient(125% 90% at 82% -8%, #FFFFFF 0%, #F7F9FD 44%, #EEF3FD 100%);
+  --grad-text:     linear-gradient(104deg, #2F6BFF 0%, #22D3EE 60%, #34CFEC 100%);
+  --grad-rule:     linear-gradient(90deg, transparent, var(--cyan-400) 50%, transparent);
+  --glow-blue:     radial-gradient(circle, rgba(47,107,255,0.20), transparent 62%);
+  --glow-cyan:     radial-gradient(circle, rgba(34,207,236,0.22), transparent 62%);
+  --glow-violet:   radial-gradient(circle, rgba(124,92,252,0.18), transparent 64%);
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+
+  --container-max: 1200px;
+  --gutter: clamp(20px, 5vw, 56px);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring: cubic-bezier(0.34, 1.3, 0.42, 1);
+  --dur-fast: 140ms; --dur-base: 240ms; --dur-slow: 520ms;
+}
+
+/* gradient utility classes for icon chips */
+.g-info{background:linear-gradient(135deg,var(--info-1),var(--info-2))}
+.g-cyan{background:linear-gradient(135deg,var(--cyan-1),var(--cyan-2))}
+.g-success{background:linear-gradient(135deg,var(--success-1),var(--success-2))}
+.g-rose{background:linear-gradient(135deg,var(--rose-1),var(--rose-2))}
+.g-warn{background:linear-gradient(135deg,var(--warn-1),var(--warn-2))}
+.g-violet{background:linear-gradient(135deg,var(--violet-1),var(--violet-2))}
+.g-dark{background:linear-gradient(135deg,var(--dark-1),var(--dark-2))}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{margin:0}
+body{
+  background:var(--bg-canvas);
+  background-image:var(--grad-canvas);
+  font-family:var(--font-sans);
+  color:var(--fg-default);
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  overflow-x:clip;
+}
+button{font-family:inherit;cursor:pointer}
+a{color:inherit;text-decoration:none}
+img{max-width:100%}
+::selection{background:var(--blue-200);color:var(--ink-900)}
+
+.wrap{max-width:var(--container-max);margin:0 auto;padding:0 var(--gutter)}
+.eyebrow{
+  font-family:var(--font-mono);font-size:11px;font-weight:600;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--accent);
+  display:inline-flex;align-items:center;gap:9px;
+}
+.eyebrow::before{content:"";width:18px;height:1px;background:currentColor;opacity:.55}
+.eyebrow--center{justify-content:center}
+
+/* buttons */
+.btn{
+  font-size:15px;font-weight:600;border-radius:12px;padding:13px 22px;
+  border:1px solid transparent;display:inline-flex;align-items:center;gap:9px;
+  transition:transform var(--dur-base) var(--ease-out),box-shadow var(--dur-base) var(--ease-out),background var(--dur-base),border-color var(--dur-base);
+  white-space:nowrap;
+}
+.btn i{width:17px;height:17px}
+.btn--primary{background:var(--grad-accent);color:#fff;box-shadow:var(--shadow-blue)}
+.btn--primary:hover{box-shadow:0 18px 42px -10px rgba(47,107,255,.6);transform:translateY(-2px)}
+.btn--primary:active{transform:translateY(0) scale(.99)}
+.btn--secondary{background:#fff;color:var(--fg-strong);border-color:var(--slate-300);box-shadow:var(--shadow-xs)}
+.btn--secondary:hover{border-color:var(--blue-300);background:var(--blue-50);color:var(--blue-700);transform:translateY(-2px)}
+.btn--light{background:#fff;color:var(--ink-900)}
+.btn--light:hover{transform:translateY(-2px);box-shadow:var(--shadow-md)}
+.btn--ondark{background:rgba(255,255,255,.06);color:var(--fg-on-dark);border-color:var(--border-on-dark)}
+.btn--ondark:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.28)}
+.btn--lg{padding:15px 28px;font-size:16px}
+.btn--ghost{background:transparent;color:var(--fg-strong)}
+.btn--ghost:hover{background:var(--slate-100)}
+
+/* reveal animation — content is visible by DEFAULT; only hidden while the
+   page is in the .preanim phase (added synchronously before paint). This
+   guarantees content never gets trapped invisible if motion is unavailable. */
+.reveal{opacity:1;transform:none;transition:opacity .8s var(--ease-out),transform .8s var(--ease-out)}
+html.preanim .reveal{opacity:0;transform:translateY(20px)}
+html.preanim .reveal.in{opacity:1;transform:none}
+.reveal[data-d="1"]{transition-delay:.07s}
+.reveal[data-d="2"]{transition-delay:.14s}
+.reveal[data-d="3"]{transition-delay:.21s}
+.reveal[data-d="4"]{transition-delay:.28s}
+.reveal[data-d="5"]{transition-delay:.35s}
+
+.no-motion .reveal{opacity:1!important;transform:none!important;transition:none!important}
+@media(prefers-reduced-motion:reduce){
+  *{animation-duration:.01ms!important;transition-duration:.01ms!important}
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none}
+}
